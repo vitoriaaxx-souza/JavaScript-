@@ -1,13 +1,13 @@
-const livros = requre ('./listalivros');
+const livros = require ('./listaLivros');
 
-function menorValor(arrProdutos, posicaoInicial) {
-    let maisBarato = posicaoInicial;
+function maiorValor(arrProdutos, posicaoInicial) {
+    let maisCaro = posicaoInicial;
 
-    for (let atual = posicaoInicial; atual < arrProduto.length; atual++) (
-        if (arrProdutos [atual].preco < arrProdutos [maisBarato].preco) {
-
+    for (let atual = posicaoInicial; atual < arrProduto.length; atual++) {
+        if (arrProdutos[atual].preco > arrProdutos[maisCaro].preco) {
+            maisCaro = atual;
         }
-    )
-return maisBarato;
+    }
+    return maisCaro;
 }
-module.exports = menorValor; 
+module.exports = maiorValor; 
